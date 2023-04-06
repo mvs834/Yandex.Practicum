@@ -1,13 +1,13 @@
-# Анализ платёжеспособности заёмщиков
+# Analysis of borrowers' solvency
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/a8f2a8e306225c6d77503597e2c679d868478e21/Bank%20credit%20scoring/Bank_credit_scoring.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/4bce2422ae52b73e26a4306b1e69914f4e45b74c/DA%2002%20Bank%20credit%20scoring/Bank_credit_scoring.ipynb)
 
-## Описание проекта
+## Project Description
 
-Необходимо оценить влияние семейного положения и наличия и количества детей клиента на погашение кредита в срок на основе статистики о платёжеспособности клиентов.
+It is necessary to assess the impact of the marital status and the presence and number of children of the client on the repayment of the loan on time based on statistics on the solvency of clients.
 
 
-## Навыки и инструменты
+## Skills and tools
 
 - **python**
 - **pandas**
@@ -17,44 +17,44 @@
 - nltk.stem.**SnowballStemmer**
 - pymystem3.**Mystem**
 
-## Ход исследования
+## Research progress
 
-### Загрузка и обзор данных
-- выявлены пропуски в двух колонках (days_employed и total_income)
-- необходимо сменить тип данных в колонке days_employed
-- выявлены некорректные значения, включая наличие отрицательных (days_employed) и сверхвысоких значений, м.б. ошибка разряда (days_employed), различное написание одних и тех же категорий, т.е. строчные и прописные буквы (education)
-- обнаружены неявные дубликаты в колонке purpose (сделка с автомобилем, покупка автомобиля, покупка своего автомобиля и т.д.)
+### Data loading and review
+- omissions were detected in two columns (days_employed and total_income)
+- it is necessary to change the data type in the days_employed column
+- incorrect values were identified, including the presence of negative (days_employed) and ultra-high values, m.b. discharge error (days_employed), different spelling of the same categories, i.e. lowercase and uppercase letters (education)
+- implicit duplicates were detected in the purpose column (car deal, car purchase, buying your own car, etc.)
 
-### Предобработка данных
-- пропуски в total_income заменены на медианные во всей выборке
-- пропуски в days_employed заменены в зависимости от возраста клиента
+### Data preprocessing
+- omissions in total_income are replaced with median ones in the entire sample
+- omissions in days_employed are replaced depending on the age of the client
 
-- некорректные значения days_employed изменены: отрицательные переведены в положительные, а сверхвысокие разделены на 100
-- значения с плавающей запятой в колонках days_employed и total_income заменены на целочисленный тип данных
+- incorrect days_employed values have been changed: negative values have been converted to positive, and ultra-high values have been divided by 100
+- floating-point values in the days_employed and total_income columns have been replaced with an integer data type
 
-- дубликаты в children заменены исходя из предположений о некорректном введении значений 20 (ноль на нампаде мог быть расположен под двойкой) и -1 (минус мог быть прописан как тире)
-- в колонке client_age проблемными дубликатами являются только нулевые значения, которые были удалены исходя из их незначительного количества
-- в колонке education дубликаты связаны с различным написанием категорий, что может быть связано с различным подходом к изначальному внесению информации. Все значения были приведены к написанию строчными буквами
+- duplicates in children were replaced based on assumptions about the incorrect introduction of values 20 (zero on the nampad could be located under a deuce) and -1 (minus could be written as a dash)
+- in the client_age column, problematic duplicates are only zero values that were deleted based on their insignificant number
+- in the education column, duplicates are associated with different spelling of categories, which may be due to a different approach to the initial input of information. All values were given to be written in lowercase letters
 
-- проведена лемматизация колонки purpose: 1) выделены стемы, 2) отсортированы по частоте встречаемости, 3) из них выбраны необходимые для целей кредита и 4) с помощью функции в каждой строке колонки проведена лемматизация
+- lemmatization of the purpose column was carried out: 1) stems were selected, 2) sorted by frequency of occurrence, 3) the necessary ones were selected for the purposes of the loan and 4) lemmatization was carried out using the function in each row of the column
 
-- для ответа на вопрос "есть ли зависимость между наличием детей и возвратом кредита в срок?" была добавлена колонка childfree для заёмщиков без детей (True) и с детьми (False). Заёмщиков без детей примерно в 2 раза больше, чем заёмщиков с детьми
+- to answer the question "is there a relationship between having children and repayment of the loan on time?" The childfree column has been added for borrowers without children (True) and with children (False). Borrowers without children are about 2 times more than borrowers with children
 
-### Ответы на вопросы
-- "Есть ли зависимость между наличием детей и возвратом кредита в срок?" - однозначного вывода о наличии зависимости между наличием детей и возвратом кредита в срок сделать нельзя
-- "Влияет ли количество детей клиента на факт погашения кредита в срок?" - наибольшее количество должников в категории заёмщиков с 4-я детьми, а наименьшее у заёмщиков без детей. Это и может говорить о зависимости - чем больше детей у заёмщика, тем менее вероятен возврат кредита в срок - все деньги проедают дети
-- "Есть ли зависимость между семейным положением и возвратом кредита в срок?" - наибольшее кол-во должников в категории "не женат / не замужем", что может объясняться отсутствием обязательств перед супругом. Наименьшее кол-во должников в категории "вдовец / вдова", что может объясняться погашением задолженности за счёт наследства
-- "Есть ли зависимость между уровнем дохода и возвратом кредита в срок?" - зависимость между уровнем дохода и возвратом кредита в срок имеется - чем выше доход, тем больше возвратов кредита в срок
-- "Как разные цели кредита влияют на его возврат в срок?" - наибольший процент должников наблюдается в категории целей кредита "автомобиль", наименьший - в категории "жильё" (даже если объединять категории "недвижимость" и "жилье")
+### Answers to questions
+- "Is there a relationship between having children and repayment of the loan on time?" - it is impossible to make an unambiguous conclusion about the dependence between the presence of children and the repayment of the loan on time
+- "Does the number of the client's children affect the fact of repayment of the loan on time?" - the largest number of debtors is in the category of borrowers with 4 children, and the smallest is among borrowers without children. This may indicate dependence - the more children the borrower has, the less likely it is to repay the loan on time - children eat up all the money
+- "Is there a relationship between marital status and repayment of the loan on time?" - the largest number of debtors in the category "not married", which may be explained by the lack of obligations to the spouse. The smallest number of debtors in the "widower / widow" category, which can be explained by the repayment of debt at the expense of inheritance
+- "Is there a relationship between the level of income and repayment of the loan on time?" - there is a relationship between the income level and the repayment of the loan on time - the higher the income, the more loan repayments on time
+- "How do the different purposes of the loan affect its repayment on time?" - the largest percentage of debtors is observed in the category of loan purposes "car", the smallest - in the category "housing" (even if you combine the categories "real estate" and "housing")
 
-## Вывод
+## Output
 
-Начальные данные состояли из 21525 строк, после обработки их осталось 21424. Выборка является достаточной для проведения исследования.
+The initial data consisted of 21525 rows, after processing they remained 21424. The sample is sufficient to conduct the study.
 
-Обработка данных состояла в заполнении пропусков, корректировке неверных значений, обработке дубликатов, категоризации и лемматизации.
+Data processing consisted of filling in gaps, correcting incorrect values, processing duplicates, categorization and lemmatization.
 
-Выявлены следующие зависимости:
+The following dependencies have been identified:
 
-- с возрастанием количества детей от 0 до 4 возрастает количество должников
-- с возрастанием дохода уменьшается количество должников
-- цели кредита влияют на своевременный возврат кредита: наибольшее количество должников берут кредит на автомобиль, далее - на образование, на свадьбу и наименьшее количество должников берут кредит на жильё.
+- with an increase in the number of children from 0 to 4, the number of debtors increases
+- with an increase in income, the number of debtors decreases
+- the objectives of the loan affect the timely repayment of the loan: the largest number of debtors take a loan for a car, then - for education, for a wedding and the smallest number of debtors take a loan for housing.
