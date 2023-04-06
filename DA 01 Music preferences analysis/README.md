@@ -1,68 +1,63 @@
-# Анализ музыкальных предпочтений
+# Analysis of music preferences
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/92984f4b379980a681aa6aa0397c61cccecb6048/Music%20preferences%20analysis/Music_preferences_analysis.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/b731db146041eff2d26fecc6693cb25e08e8aad8/DA%2001%20Music%20preferences%20analysis/Music_preferences_analysis.ipynb)
 
-## Описание проекта
+## Project Description
 
-Необходимо проверить три гипотезы:
+It is necessary to test three hypotheses:
 
-- Активность пользователей зависит от дня недели. Причём в Москве и Петербурге это проявляется по-разному.
-- В понедельник утром в Москве преобладают одни жанры, а в Петербурге — другие. Так же и вечером пятницы преобладают разные жанры — в зависимости от города.
-- Москва и Петербург предпочитают разные жанры музыки. В Москве чаще слушают поп-музыку, в Петербурге — русский рэп.
+- User activity depends on the day of the week. Moreover, this manifests itself differently in Moscow and St. Petersburg.
+- In Moscow, certain genres prevail on Monday mornings, while in St. Petersburg, others do. The same goes for Friday evenings — the prevailing genres depend on the city.
+- Moscow and St. Petersburg prefer different genres of music. Pop music is more frequently listened to in Moscow, while Russian rap is more popular in St. Petersburg.
 
 
 
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
 
 
-## Ход исследования
+## Research process
 
-### Обзор данных
-В строках — данные о треках. Часть колонок описывает трек: название, исполнителя и жанр, остальные данные о пользователе: из какого он города, когда он слушал музыку. Встречены пропуски, стиль заголовков невыдержан.
+### Data Overview
+The data describes tracks and contains information about the track, such as its title, artist, and genre, as well as information about the user, such as their city and when they listened to the music. There are missing values, and the header style is inconsistent.
 
-### Предобработка
-- Заменены пропуски на "unknown"
-- Выявлены и удалены явные и неявные дубликаты
-- Заголовки приведены к "змеиному формату"
+### Data Preprocessing
+- Missing values were replaced with "unknown".
+- Obvious and implicit duplicates were identified and removed.
+- Headers were converted to "snake case" format.
 
-### Проверка гипотез
+### Hypothesis Testing
 
-#### Активность vs Дни недели
-Гипотеза подтвердилась:
+#### Activity vs. Days of the Week
+The hypothesis was confirmed:
 
-- В Москве пик прослушиваний приходится на понедельник и пятницу, а в среду заметен спад.
-- В Петербурге, наоборот, больше слушают музыку по средам. Активность в понедельник и пятницу здесь почти в равной мере уступает среде.
+- In Moscow, the peak of listening activity falls on Monday and Friday, with a noticeable decline on Wednesday.
+- In St. Petersburg, on the other hand, people listen to more music on Wednesdays. Activity on Monday and Friday is almost equally lower than on Wednesday.
 
-#### Начало Vs конец недели
-Гипотеза подтвердилась лишь частично:
+#### Beginning vs. End of the Week
+The hypothesis was only partially confirmed:
 
-- Пользователи слушают похожую музыку в начале недели и в конце.
-- Разница между Москвой и Петербургом не слишком выражена. В Москве чаще слушают русскую популярную музыку, в Петербурге — джаз.
-Однако пропуски в данных ставят под сомнение этот результат. В Москве их так много, что рейтинг топ-10 мог бы выглядеть иначе, если бы не утерянные данные о жанрах.
+- Users listen to similar music at the beginning and end of the week.
+- The difference between Moscow and St. Petersburg is not too pronounced. In Moscow, Russian popular music is more frequently listened to, while in St. Petersburg, jazz is more popular.
+- However, missing data call this result into question. In Moscow, there are so many missing values that the top 10 ranking of genres could have looked different if the data on genres had not been lost.
 
-#### Жанровые предпочтения в Москве и Петербурге
-Гипотеза частично подтвердилась:
+#### Genre preferences in Moscow and St. Petersburg
+The hypothesis was partially confirmed:
 
-- Поп-музыка — самый популярный жанр в Москве, как и предполагала гипотеза. Более того, в топ-10 жанров встречается близкий жанр — русская популярная музыка.
-- Вопреки ожиданиям, рэп одинаково популярен в Москве и Петербурге.
+- Pop music is the most popular genre in Moscow, as the hypothesis suggested. Moreover, a similar genre—Russian popular music—appears in the top 10 genres.
+- Contrary to expectations, rap is equally popular in Moscow and St. Petersburg.
 
-## Вывод
+## Conclusion
 
-Гипотезы проверены и установлено следующее:
+The hypotheses have been tested, and the following has been established:
 
-1. День недели по-разному влияет на активность пользователей в Москве и Петербурге. 
+1. The day of the week affects user activity differently in Moscow and St. Petersburg.
+The first hypothesis was fully confirmed.
 
-Первая гипотеза полностью подтвердилась.
+2. Musical preferences do not change much over the course of the week, whether in Moscow or St. Petersburg. Minor differences are noticeable at the beginning of the week, but they are not significant.
 
-2. Музыкальные предпочтения не сильно меняются в течение недели — будь то Москва или Петербург. Небольшие различия заметны в начале недели, по понедельникам:
-* в Москве слушают музыку жанра “world”,
-* в Петербурге — джаз и классику.
+3. Moscow and St. Petersburg have different genre preferences. Pop music is more popular in Moscow, while Russian rap is more popular in St. Petersburg.
 
-Таким образом, вторая гипотеза подтвердилась лишь отчасти. Этот результат мог оказаться иным, если бы не пропуски в данных.
-
-3. Во вкусах пользователей Москвы и Петербурга больше общего чем различий. Вопреки ожиданиям, предпочтения жанров в Петербурге напоминают московские.
-
-Третья гипотеза не подтвердилась. Если различия в предпочтениях и существуют, на основной массе пользователей они незаметны.
+The third hypothesis was not confirmed. If there are differences in preferences, they are imperceptible to the majority of users.

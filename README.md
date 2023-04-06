@@ -1,4 +1,4 @@
-# Yandex.Practicum-RUS
+# Yandex.Practicum
 Projects completed during the "Data Science Specialist" course in the Data Analytics (DA) and Data Science (DS) topics.
 
 | #    | Project name                 | Description                                                                                       | Stack                                                       |
