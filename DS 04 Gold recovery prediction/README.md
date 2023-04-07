@@ -1,31 +1,31 @@
-# Прогноз коэффициента восстановления золота из золотосодержащей руды
+# Gold Recovery Prediction
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/a71ed4f6529a26665b95f65eb1ba82da2f07423b/Gold%20recovery%20prediction/Gold_recovery_prediction.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/933ecc24c96cc99ef951753285712c67b565ad0c/DS%2003%20Oil%20region%20profit%20estimation/Oil_region_profit_estimation.ipynb)
 
-## Описание проекта
+## Project Description
 
-Необходимо предсказать коэффициент восстановления золота из золотосодержащей руды на основе данных с параметрами добычи и очистки
+The goal of this project is to predict the gold recovery rate from gold-containing ore based on mining and refining parameters.
 
-## Ход выполнения проекта
-### Загрузка и подготовка данных
-- в тестовой выборке отсутствуют 34 признака, которые есть в обучающей выборке
-- проверена правильность расчета эффективности обогащения, расчёт сделан верно
-- в тестовой выборке отсутствуют целевые признаки final.output.recovery и rougher.output.recovery
+## Project Execution
+### Data Upload and Preparation
+- The test dataset is missing 34 features that are present in the training dataset.
+- The efficiency of enrichment calculations was verified, and the calculation was found to be correct.
+- The test dataset is missing the target features, final.output.recovery and rougher.output.recovery.
 
-### Предобработка данных
-- пропуски заполнены предыдущими значениями
-- добавлены целевые признаки в тестовую выборку
+### Data Preprocessing
+- Missing values were filled with the previous values.
+- Target features were added to the test dataset.
 
-### Анализ данных
-- построены графики распределения признаков на разных этапах очистки
-- размеры гранул сырья на обучающей и тестовой выборках совпадают
-- общая концентрация металлов (Au, Ag, Pb) возрастает после обогащения и концентрируется (распределение сужается) в конце технологического процесса
+### Data Analysis
+- Distribution plots of the features at different refining stages were constructed.
+- The sizes of the raw material granules in the training and test datasets are the same.
+- The total concentration of metals (Au, Ag, Pb) increases after enrichment and is concentrated (distribution narrows) at the end of the technological process.
 
-### Построение модели
-- написаны функции для вычисления итоговой sMAPE
-- обучены модели линейной регрессии, решающего дерева и случайного леса
+### Model Building
+- Functions were written to calculate the final sMAPE.
+- Linear regression, decision tree, and random forest models were trained.
 
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -38,6 +38,6 @@
 
 
 
-## Вывод
+## Conclusion
 
-Наилучшая модель - модель случайного леса, она прошла проверку на адекватность - по сравнению с константной dummy-моделью она имеет меньшую ошибку sMAPE
+The best model is the random forest model, which was found to be adequate as it has a lower sMAPE error compared to the constant dummy model.
