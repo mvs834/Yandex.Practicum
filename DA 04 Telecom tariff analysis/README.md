@@ -1,38 +1,40 @@
-# Анализ тарифов телекоммуникационной компании
+# Analysis of telecom company tariffs
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/29fa79bf3fdc94f38af425a2d00b6565037549b7/Telecom%20tariff%20analysis/Telecom_tariff_analysis.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/18919b0670c0f6b10300d179f1699f94f73425fc/DA%2004%20Telecom%20tariff%20analysis/Telecom_tariff_analysis.ipynb)
 
-## Описание проекта
+## Project description
 
-Необходимо проанализировать поведение клиентов телекоммуникационной компании и сделать вывод — какой тариф выгоднее для компании
+The aim of the project is to analyze the behavior of telecom company customers and determine which tariff is more profitable for the company.
 
-## Ход выполнения проекта
-### Загрузка данных
-данные загружены, не имеют пропусков. Поскольку в задании необходимо изучить срезы по месяцам, даты следует привести к соответствующему виду
+## Project workflow
+### Data upload
 
-### Подготовка данных
-- переименованы колонки
-- изменён тип данных
-- даты округлены до месяцев
-- даты приведены к единому названию
-- секунды округлены до минут
-- расчитаны новые колонки: доход со звонков, смс и интернета, а также общий доход включая абонентскую плату
+The data has been loaded and does not have any missing values. Since the task requires studying slices by months, dates should be converted to the appropriate format.
 
-### Анализ данных
-- Среднее значение по выборке тарифа "ультра" больше, чем "смарт".
-- Стандартное отклонение по выборке тарифа "ультра" больше, чем "смарт".
-- Распределения схожи, но выборка по тарифу "ультра" имеет большую положительную скошенность, хотя значение первого квартиля меньше, чем "смарт".
+### Data preparation
+- Column names have been renamed.
+- Data types have been changed.
+- Dates have been rounded to months.
+- Dates have been converted to a consistent format.
+- Seconds have been rounded to minutes.
+- New columns have been calculated: revenue from calls, SMS and Internet, as well as total revenue including subscription fees.
 
-### Проверка гипотез
-- выручка по тарифам: 
-Нулевая гипотеза: средняя выручка пользователей тарифов «Ультра» и «Смарт» равна
-Альтернативная гипотеза: средняя выручка пользователей тарифов «Ультра» и «Смарт» не равна
+### Data analysis
+- The mean value of the "Ultra" tariff plan in the sample is higher than that of the "Smart" plan.
+- The standard deviation of the "Ultra" tariff plan in the sample is higher than that of the "Smart" plan.
+- The distributions are similar, but the sample for the "Ultra" plan has a greater positive skewness, although the value of the first quartile is lower than that of the "Smart" plan.
 
-- выручка по городам:
-Нулевая гипотеза: средняя выручка пользователей из Москвы не отличается от выручки пользователей из других регионов
-Альтернативная гипотеза: средняя выручка пользователей из Москвы отличается от выручки пользователей из других регионов
+### Hypothesis testing
 
-## Навыки и инструменты
+- Revenue by tariff plans:
+Null hypothesis: The average revenue of users on the "Ultra" and "Smart" tariff plans is the same.
+Alternative hypothesis: The average revenue of users on the "Ultra" and "Smart" tariff plans is different.
+
+- Revenue by cities:
+Null hypothesis: The average revenue of users from Moscow is not different from the revenue of users from other regions.
+Alternative hypothesis: The average revenue of users from Moscow is different from the revenue of users from other regions.
+
+## Skills and tools
 
 - **python**
 - **pandas**
@@ -41,16 +43,16 @@
 
 
 
-## Вывод
+## Summary
 
-Входные данные duration и mb_used имеют скошенное левостороннее распределение, приближающееся к распределению Пуассона. Это ожидаемое распределение от данных, отражающих продолжительность событий.
+The input data for "duration" and "mb_used" have a left-skewed distribution that approximates a Poisson distribution. This is an expected distribution for data reflecting the duration of events.
 
-Предобработка исходных данных включала переименование колонок, изменение типа данных, округление дат до месяцев, приведение дат к единому формату и округление секунд до минут.
+Data preprocessing included column renaming, data type conversion, rounding dates to months, standardizing date format, and rounding seconds to minutes.
 
-Были рассчитаны колонки дохода по видам услуг исходя из тарифных планов, проанализированы объёмы пользования услугами, а также сформулированы и проверены статистические гипотезы.
+Columns for revenue by service were calculated based on the tariff plans, usage volumes were analyzed, and statistical hypotheses were formulated and tested.
 
-В среднем пользователи тарифа "смарт" тратят 419 минут на разговоры в месяц (стандартное отклонение 189), а "ультра" - 548 (стандартное отклонение 305). Пользователи тарифа "смарт" тратят в среднем 39 сообщений в месяц (стандартное отклонение 27), а тарифа "ультра" - 61 (стандартное отклонение 46). На интернет пользователи тарифа "смарт" ежемесячно тратят 16 Гб (стандартное отклонение 6), а тарифа "ультра" - 20 Гб (стандартное отклонение 10). Распределения по видам услуг у разных тарифов отличается - тариф "ультра" имеет больший скос влево, что также отражает большие объёмы пользования услугами у клиентов этого тарифа.
+On average, "Smart" tariff plan users spend 419 minutes on calls per month (with a standard deviation of 189), while "Ultra" users spend 548 (with a standard deviation of 305). "Smart" plan users send an average of 39 messages per month (with a standard deviation of 27), while "Ultra" plan users send 61 (with a standard deviation of 46). "Smart" plan users use an average of 16 GB of internet per month (with a standard deviation of 6), while "Ultra" plan users use 20 GB (with a standard deviation of 10). The distribution of services used differs between the two tariff plans, with "Ultra" having a greater left skew, reflecting greater usage volumes by customers of this plan.
 
-Тариф "смарт" приносит доход со звонков, интернета и сообщений, а тариф "ультра" - только немного с интернета. Пользователи тарифа "ультра" не выходят за лимиты и приносят доход в основном в виде абонентской платы.
+The "Smart" tariff plan generates revenue from calls, internet, and messages, while the "Ultra" plan generates revenue primarily from internet usage. "Ultra" plan users do not exceed their limits and mainly generate revenue from their subscription fees.
 
-Средняя выручка у тарифов различается и тариф "смарт" приносит больший доход, чем тариф "ультра". Средняя выручка от пользователей Москвы не отличается значительно от средней выручки польователей других регионов.
+The average revenue from the two tariff plans differs, with the "Smart" plan generating more revenue than the "Ultra" plan. The average revenue from users in Moscow does not differ significantly from that of users in other regions.
