@@ -1,35 +1,37 @@
-# Анализ трендов популярности игр
+# Analysis of trends in the popularity of games
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/70c59be797102d116f4c28cddf0e1248c2386344/Games%20popularity%20trends%20analysis/Games_popularity_trends_analysis.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/1a914a49824195561f514b79a769795e01448633/DA%2005%20Games%20popularity%20trends%20analysis/Games_popularity_trends_analysis.ipynb)
 
-## Описание проекта
+## Project Description
 
-Необходимо выявить определяющие успешность игры закономерности на основе исторических данных об играх. Это позволит сделать ставку на потенциально популярный продукт и спланировать рекламные кампании
+It is necessary to identify patterns that determine the success of the game based on historical data about the games. This will allow you to bet on a potentially popular product and plan advertising campaigns
 
-## Ход выполнения проекта
-### Загрузка данных
-Данные загружены, нуждаются в предобработке
-### Предобработка данных
-- названия колонок приведены к нижнему регистру
-- произведена частичная замена пропусков: пропуски рейтинга частично удалось востановить по названиям игр, а оценки пользователей и критиков имеют значительное количество пропусков, лучше их не заполнять, чтобы не делать неверных выводов при анализе.
+## Project progress
+### Data loading
 
-### Исследовательский анализ данных
-- изучены срезы данных: игр по годам, продажи по платформам, продажи от отзывов, игры по жанрам
-- составлен портрет пользователя из каждого региона: самые популярные платформы, жанры, влияние рейтинга ESBR на продажи в регионах
+Data is loaded, needs preprocessing
 
-### Проверка гипотез
-- Нулевая гипотеза: средние пользовательские рейтинги платформ Xbox One и PC одинаковые
-- Альтернативная гипотеза: средние пользовательские рейтинги платформ Xbox One и PC различаются
+### Data preprocessing
+- column names are reduced to lowercase
+- - partial replacement of omissions was made: the rating omissions were partially restored by the names of the games, and the ratings of users and critics have a significant number of omissions, it is better not to fill them in so as not to draw incorrect conclusions when analyzing.
 
-Статистическая гипотеза о равенстве средних пользовательских оценок двух платформ не отвергается, пользователи ставят оценки играм, а не платформам и в большинстве случаев эти оценки схожи. Однако, как было выявлено при заполнении пропусков, некоторые платформы имеют заметно отличные оценки, что может быть связано с техническими особенностями переноса игр с одной платформы на другую.
+### Exploratory data analysis
+- studied data slices: games by year, sales by platform, sales from reviews, games by genre
+- a portrait of a user from each region has been compiled: the most popular platforms, genres, the impact of the ESBR rating on sales in the regions
 
-- Нулевая гипотеза: средние пользовательские рейтинги жанров Action (англ. «действие», экшен-игры) и Sports (англ. «спортивные соревнования») одинаковые.
-- Альтернативная гипотеза: средние пользовательские рейтинги жанров Action (англ. «действие», экшен-игры) и Sports (англ. «спортивные соревнования») разные.
+### Hypothesis Testing
+- Null hypothesis: the average user ratings of Xbox One and PC platforms are the same.
+- Alternative hypothesis: the average user ratings of Xbox One and PC platforms are different.
 
-Статистическая гипотеза о равенстве средних пользовательских оценок двух жанров отвергается. Это сходится с результатами - в исследовании было показано, что профиль пользователя (предпочтения по жанрам) отличается по миру
+The statistical hypothesis of the equality of average user ratings of the two platforms is not rejected. Users rate games, not platforms, and in most cases, these ratings are similar. However, as discovered when filling in missing data, some platforms have significantly different ratings, which may be due to technical features of transferring games from one platform to another.
+
+- Null hypothesis: the average user ratings of Action and Sports genres are the same.
+- Alternative hypothesis: the average user ratings of Action and Sports genres are different.
+
+The statistical hypothesis of the equality of average user ratings of the two genres is rejected. This is consistent with the results - the study showed that the user profile (genre preferences) differs around the world.
 
 
-## Навыки и инструменты
+## Skills and tools
 
 - **python**
 - **pandas**
@@ -39,14 +41,14 @@
 
 
 
-## Вывод
+## Conclusion
 
-Для выявления определяющих успешность игры закономерностей был выбран период с 2014 по 2016 гг. Больший период брать не следует, поскольку коньюнктура рынка меняется: конкуренции среди платформ становится со временем больше, скорость смены игровых трендов также возросла: до 2007 год лидеры среди игровых платформ сменялись каждые 5 лет, а после - каждые 2-3 года. Поскольу прогноз осуществляется на 2017 г, то следует брать интервал не более чем на 3 года отстающий от прогнозного, т.е. 2014-2016 гг.
+To identify the patterns that determine the success of a game, the period from 2014 to 2016 was selected. It is not recommended to take a longer period because the market situation changes. Over time, there is more competition among platforms, and the speed of changing gaming trends has increased. Before 2007, leaders among gaming platforms changed every 5 years, and after that, they changed every 2-3 years. Since the forecast is for 2017, the interval should not exceed 3 years behind the forecast, which means the period of 2014-2016.
 
-В последнее время наиболее популярными являются платформы PS4 и XOne, однако и их популярность начала спадать с 2015 г. Это означает, что скоро на рынке появится новая игровая платформа, сделав ставку на которую, можно кормиться следующие годы.
+Currently, the most popular platforms are PS4 and XOne, but their popularity started to decline in 2015. This means that a new gaming platform will soon appear on the market, and investing in it could pay off in the following years.
 
-На отзывы как пользователей, так и критиков можно не ориентироваться, они на продажи не влияют.
+User and critic reviews do not influence sales.
 
-Самые прибыльные игровые жанры - action и shooter. Причём, для максимизации прибыли в жанре shooter нужно сделать небольшое количество качественных игр, тогда как в жанре action следует сделать большое количество игр.
+The most profitable gaming genres are action and shooter. However, to maximize profits in the shooter genre, a small number of high-quality games should be developed, while in the action genre, a large number of games should be produced.
 
-Рынок, на который следует ориентироваться, вибирая платформу PS4 не важен, а для игр на XOne предпочтительнее европейский или североамериканский рынок. Выбирая жанр action рынок также не важен, тогда как shooter может быть менее востребован в Японии. Рейтинг влияет на продажи по-разному в западном и восточном мире. В Европе и Северной Америке большие продажи игр с рейтингом M, а в Японии - с рейтингом T.
+When choosing the PS4 platform, the market to focus on is not important, while for XOne games, the European or North American markets are preferred. The market is also not crucial when choosing the action genre, whereas the shooter genre may be less in demand in Japan. Ratings affect sales differently in the Western and Eastern worlds. In Europe and North America, games with an M rating have high sales, while in Japan, games with a T rating sell more.
