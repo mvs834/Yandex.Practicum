@@ -1,41 +1,40 @@
-# Прогноз рыночной цены автомобиля
+# Car Market Price Prediction
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/346d5c78d45f2053aea598555d54ae9550e64705/Car%20Price%20Prediction/Car_Price_Prediction.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/4fed9d71722ac59a3532c0817873766c2c92b26e/DS%2005%20Car%20Price%20Prediction/Car_Price_Prediction.ipynb)
 
-## Описание проекта
+## Project Description
 
-Необходимо оценить рыночную стоимость автомобиля на основе исторических данных, включающих технические характеристики, комплектации и цены автомобилей.
+The goal of this project is to estimate the market value of a car based on historical data, including technical specifications, equipment, and prices of similar cars.
 
-## Ход выполнения проекта
-### Загрузка и подготовка данных
-- названия колонок не соответствуют "змеиному" формату
-- колонки с датой не имеют формат даты
-- пропуски данных о времени
-- 5 колонок содержат пропуски
-- 4 строки являются явными дубликатами
-- имеются странные значения в колонках с ценой, годом регистрации, количеством изображений, почтовым кодом, пробегом и мощностью
+## Project Execution
+### Data Upload and Preparation
+- Column names are not in the "snake_case" format.
+- Columns with dates are not in date format.
+- Missing data on timestamps.
+- 5 columns contain missing values.
+- 4 rows are clear duplicates.
+- Strange values in columns with price, registration year, number of images, postal code, mileage, and power.
 
-### Предобработка данных
-- удалены нулевые значения в целевом признаке
-- цены округлены до 50 евро
-- удалены некорректные значения и выбросы в колонках с годом регистрации и мощностью
-- категоризирована колонка с пробегом
-- удалены пропуски в колонке с типом коробки передач, кузова, двигателя и модели
-- названия колонок приведены к "змеиному" формату
-- колонки с датой приведены к формату даты
-- заполнены пропуски в колонке с временем
+### Data Preprocessing
+- Zero values in the target variable have been removed.
+- Prices have been rounded to the nearest 50 euros.
+- Incorrect values and outliers in columns with registration year and power have been removed.
+- Mileage column has been categorized.
+- Missing values in columns with gearbox type, body type, engine type, and model have been removed.
+- Column names have been converted to "snake_case".
+- Columns with dates have been converted to date format.
+- Missing values in the timestamp column have been filled.
 
-### Обучение моделей
-- созданы новые признаки
-- выполнено кодирование категориальных признаков
-- обучены модели линейной регрессии, дерева решений, случайного леса, градиентного бустинга и catboost
-- замерено время обучения моделей
+### Model Training
+- New features have been created.
+- Categorical features have been encoded.
+- Linear regression, decision tree, random forest, gradient boosting, and catboost models have been trained.
+- Model training times have been recorded.
 
-### Анализ моделей
-- выбрана модель CatBoost с наименьшими значениями RMSE и оптимальным временем обучения
+### Model Analysis
+- The CatBoost model with the lowest RMSE values and optimal training time was selected.
 
-
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -52,10 +51,6 @@
 - **xgboost**
 - catboost.**CatBoostRegressor**
 
+## Conclusion
 
-
-
-
-## Вывод
-
-Была проведена предобработка данных (смена формата, обработка пропусков и выбросов), исследовательская работа по определению выбросов, создание новых признаков и обучению и выбору модели для прогноза цены. Выбрана модель catboost, показавшая наименьший результат RMSE 29,1 за достаточно короткое время
+Data preprocessing was performed (format changes, handling missing values and outliers), exploratory data analysis was conducted to identify outliers, new features were created, and a model was trained and selected for price prediction. The CatBoost model was selected, which showed the lowest RMSE value of 29.1 in a reasonably short amount of time.
