@@ -1,28 +1,24 @@
-# Рекомендация тарифа клиенту телекоммуникационной компании
+# Recommendation of a telecom tariff to a customer
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/1d47474de31ad23397dc6fcfda0816ce971afdad/Telecom%20tariff%20recommendations/Telecom_tariff_recommendations.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/ef7d24f2858f502ecbf13930df9cc0918c0ec7f0/DS%2001%20Telecom%20tariff%20recommendations/Telecom_tariff_recommendations.ipynb)
 
 
-## Описание проекта
+## Project Description
 
-Необходимо построить модель для задачи классификации, которая выберет подходящий тариф для клиента телекоммуникационной компании на основе данных о расходе минут звонков, количества смс и потраченного интернет-трафика.
+The goal of this project is to build a classification model that recommends the most suitable telecom tariff for a customer based on their usage of minutes, SMS, and internet traffic.
 
-## Ход выполнения проекта
-### Загрузка данных
-Данные не нуждаются в предобработке
+## Project Execution Workflow
+### Data upload
 
-### Разбиение данных на выборки
-В тренировочной выборке 1928 строк
-В валидационной выборке 643 строки
+The data does not require any preprocessing.
 
-### Исследование моделей
-Accuracy наилучшей DecisionTree модели с максимальной глубиной 5 на валидационной выборке составляет 0,784
-Accuracy наилучшей Random Forest модели на валидационной выборке: 0.7869362363919129
-Accuracy модели логистической регрессии на валидационной выборке: 0.6842923794712286
+### Data Splitting
+The training set contains 1,928 rows, and the validation set contains 643 rows.
 
-Наивысшая accuracy у модели Random Forest
+### Model Analysis
+The highest accuracy was achieved by the Random Forest model, which had an accuracy of 0.786 on the validation set. The best Decision Tree model had a maximum depth of 5 and achieved an accuracy of 0.784 on the validation set. The Logistic Regression model had an accuracy of 0.684 on the validation set.
 
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -33,6 +29,6 @@ Accuracy модели логистической регрессии на вал�
 
 
 
-## Вывод
+## Conclusion
 
-сравнение построенной модели с константной показывает, что разница не велика - всего 8%. Это говорит о том, что модель нуждается в улучшении
+Comparing the built model to a constant model reveals a small difference of only 8%. This indicates that the model requires improvement.
