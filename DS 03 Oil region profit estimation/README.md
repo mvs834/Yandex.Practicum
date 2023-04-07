@@ -1,26 +1,29 @@
-# Выбор наиболее прибыльного региона для бурения скважин
+# hoosing the most profitable region for drilling wells
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/5d3755fcd0588f853a6b04870e950fae0263c7e9/Oil%20region%20profit%20estimation/Oil_region_profit_estimation.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/787cf856a57ecd4eb300e2ab631b174899b8eca1/DS%2003%20Oil%20region%20profit%20estimation/Oil_region_profit_estimation.ipynb)
 
-## Описание проекта
+## Project Description
 
-Необходимо решить в каком из регионов наиболее прибыльно и наименее рискованно бурить новую скважину на основе данных о качестве нефти и объёме запасов
+The objective of this project is to determine the most profitable and least risky region for drilling a new well based on data about the quality of oil and the volume of reserves.
 
-## Ход выполнения проекта
-### Загрузка и подготовка данных
-В данных нет пропусков, дубликатов, проблемных значений, следовательно предобработка не требуется
+## Project Execution Steps
+### Data Upload and Preparation
 
-### Обучение и проверка модели
-- выявлена высокая корреляция признака f2 с целевым признаком для региона 1
-- написана функция для разделения на выборки, обучения и валидации модели линейной регрессии
-- написана функция для dummy модели
-- сравнение результатов работы модели линейной регрессии с dummy моделью показало, что модели обучаются адекватно, поскольку показывают меньшую ошибку RMSE
+Since there are no missing values, duplicates or problematic values in the data, no preprocessing is required.
 
-### Расчёт прибыли и рисков
-- написана функция для расчёта прибыли
-- написана функция для оценки перспективности с помощью Bootstrap
+### Model Training and Validation
 
-## Навыки и инструменты
+- A high correlation was found between feature f2 and the target feature for region 1.
+- A function was written to split the data into training and validation sets, and to train a linear regression model.
+- A function was written for a dummy model.
+- Comparison of the results of the linear regression model with the dummy model showed that the models are adequately trained as they show a lower RMSE error.
+
+### Profit and Risk Calculation
+
+- A function was written to calculate the profit.
+- A function was written to evaluate the prospects using Bootstrap.
+
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -32,8 +35,8 @@
 
 
 
-## Вывод
+## Conclusion
 
-В качестве предложения, следует обратить внимание на регион 1 в связи с относительно высокой средней прогнозируемой прибылью, и низкой вероятностью оказаться в убытке. Однако, следует обратить внимание на признак f2, который коррелирует с целевым признаком в этом регионе. Возможно, имеется ошибка и оценка неверна.
+As a suggestion, attention should be given to Region 1 due to its relatively high average predicted profit and low probability of incurring losses. However, it is important to note that feature f2 is highly correlated with the target variable in this region. There may be an error and the evaluation may be incorrect.
 
-Регионы 0 и 2 имеют примерно равные показатели и между ними следует выбирать исходя из терпимости к риску: регион 2 имеет большую вероятность убытков, но и несколько большую прогнозную прибыль, тогда так регион 0 - наоборот, более консервативный.
+Regions 0 and 2 have similar indicators, and the choice between them should be based on risk tolerance: Region 2 has a higher probability of losses but also a slightly higher predicted profit, while Region 0 is more conservative in this regard.
