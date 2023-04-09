@@ -1,6 +1,6 @@
 # Recommendation of a telecom tariff to a customer
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/ef7d24f2858f502ecbf13930df9cc0918c0ec7f0/DS%2001%20Telecom%20tariff%20recommendations/Telecom_tariff_recommendations.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2001%20Telecom%20tariff%20recommendations/Telecom_tariff_recommendations.ipynb)
 
 
 ## Project Description

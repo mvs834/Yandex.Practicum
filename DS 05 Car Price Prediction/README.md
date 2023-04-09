@@ -1,6 +1,6 @@
 # Car Market Price Prediction
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/4fed9d71722ac59a3532c0817873766c2c92b26e/DS%2005%20Car%20Price%20Prediction/Car_Price_Prediction.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/0ba08c55408e5f1b47e1ec04d56d6d981c85a8a8/DS%2005%20Car%20Price%20Prediction/Car_Price_Prediction.ipynb)
 
 ## Project Description
 

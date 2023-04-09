@@ -1,6 +1,6 @@
 # Detecting Factors Affecting Real Estate Prices
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/a1533ef2911c13dc6f3a1c09c2b1c9d0f5748f1b/DA%2003%20Real%20estate%20price%20analysis/Real_estate_price_analysis.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DA%2003%20Real%20estate%20price%20analysis/Real_estate_price_analysis.ipynb)
 
 ## Project Description
 The objective is to identify the parameters that affect the market value of real estate based on advertisement data and mapping. This will enable the creation of an automated system that can detect anomalies and fraudulent activities.

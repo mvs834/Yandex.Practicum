@@ -1,6 +1,6 @@
 # Toxic Comments Identification
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/c9dc42efdaf7410a9cab595dce69a0648a6ba2d1/DS%2007%20Toxic%20comments/Toxic_Comments_Predictions.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2007%20Toxic%20comments/Toxic_Comments_Predictions.ipynb)
 
 ## Project Description:
 
@@ -43,10 +43,6 @@ The project involves identifying toxic comments based on a dataset with labeled 
 - **lightgbm**
 - **xgboost**
 - catboost.**CatBoostRegressor**
-
-
-
-
 
 ## Conclusion
 

@@ -1,6 +1,6 @@
 # Time Series. Forecasting the number of taxi clients.
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/0ba08c55408e5f1b47e1ec04d56d6d981c85a8a8/DS%2006%20Taxi%20clients%20prediction/Time_Series_Taxi_Clients_Prediction_RMSE_6.9.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2006%20Taxi%20clients%20prediction/Time_Series_Taxi_Clients_Prediction_RMSE_6.9.ipynb)
 
 ## Project description
 The goal of this project is to analyze historical data on taxi orders at airports and forecast the number of taxi orders for the next hour based on this data.

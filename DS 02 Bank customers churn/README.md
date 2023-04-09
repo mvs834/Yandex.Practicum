@@ -1,6 +1,6 @@
 # Bank customer churn prediction
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/a58d05259920dddcd70aaf0b1e6c6a3526397949/DS%2002%20Bank%20customers%20churn/Bank_customer_churn.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2002%20Bank%20customers%20churn/Bank_customer_churn.ipynb)
 
 ## Project Description
 

@@ -1,6 +1,6 @@
-# hoosing the most profitable region for drilling wells
+# Сhoosing the most profitable region for drilling wells
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/787cf856a57ecd4eb300e2ab631b174899b8eca1/DS%2003%20Oil%20region%20profit%20estimation/Oil_region_profit_estimation.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2003%20Oil%20region%20profit%20estimation/Oil_region_profit_estimation.ipynb)
 
 ## Project Description
 

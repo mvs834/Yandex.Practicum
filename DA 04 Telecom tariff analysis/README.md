@@ -1,6 +1,6 @@
 # Analysis of telecom company tariffs
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/18919b0670c0f6b10300d179f1699f94f73425fc/DA%2004%20Telecom%20tariff%20analysis/Telecom_tariff_analysis.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DA%2004%20Telecom%20tariff%20analysis/Telecom_tariff_analysis.ipynb)
 
 ## Project description
 

@@ -1,6 +1,6 @@
 # Age detection of customers from a photograph
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/9f3093c12cfc91dc4abc9c7203ccd327a812d7cf/DS%2008%20Face%20age%20recognition/Face_age_recognition.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2008%20Face%20age%20recognition/Face_age_recognition.ipynb)
 
 ## Project Description
 

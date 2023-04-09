@@ -1,6 +1,6 @@
 # Analysis of trends in the popularity of games
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/1a914a49824195561f514b79a769795e01448633/DA%2005%20Games%20popularity%20trends%20analysis/Games_popularity_trends_analysis.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DA%2005%20Games%20popularity%20trends%20analysis/Games_popularity_trends_analysis.ipynb)
 
 ## Project Description
 

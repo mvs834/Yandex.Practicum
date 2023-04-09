@@ -1,6 +1,6 @@
 # Analysis of music preferences
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/b731db146041eff2d26fecc6693cb25e08e8aad8/DA%2001%20Music%20preferences%20analysis/Music_preferences_analysis.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DA%2001%20Music%20preferences%20analysis/Music_preferences_analysis.ipynb)
 
 ## Project Description
 
@@ -9,8 +9,6 @@ It is necessary to test three hypotheses:
 - User activity depends on the day of the week. Moreover, this manifests itself differently in Moscow and St. Petersburg.
 - In Moscow, certain genres prevail on Monday mornings, while in St. Petersburg, others do. The same goes for Friday evenings — the prevailing genres depend on the city.
 - Moscow and St. Petersburg prefer different genres of music. Pop music is more frequently listened to in Moscow, while Russian rap is more popular in St. Petersburg.
-
-
 
 ## Skills and Tools
 

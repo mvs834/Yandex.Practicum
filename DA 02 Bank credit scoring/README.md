@@ -1,6 +1,6 @@
 # Analysis of borrowers' solvency
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/4bce2422ae52b73e26a4306b1e69914f4e45b74c/DA%2002%20Bank%20credit%20scoring/Bank_credit_scoring.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DA%2002%20Bank%20credit%20scoring/Bank_credit_scoring.ipynb)
 
 ## Project Description
 
