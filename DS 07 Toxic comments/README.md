@@ -2,12 +2,29 @@
 
 [ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2007%20Toxic%20comments/Toxic_Comments_Predictions.ipynb)
 
-## Project Description:
+## Project Description
 
 The project involves identifying toxic comments based on a dataset with labeled toxicity.
 
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- matplotlib.**pyplot**
+- **seaborn**
+- sklearn.preprocessing.**StandardScaler**
+- sklearn.preprocessing.**OrdinalEncoder**
+- sklearn.**pipeline**
+- sklearn.linear_model.**LinearRegression**
+- sklearn.tree.**DecisionTreeRegressor**
+- sklearn.ensemble.**RandomForestRegressor**
+- **lightgbm**
+- **xgboost**
+- catboost.**CatBoostRegressor**
+
 ## Project Execution
-### Data Preparation
+### Data Upload and Overview
 - The data is provided in the form of textual comments.
 - There are no missing or duplicate values.
 - The target variable is imbalanced.
@@ -26,23 +43,6 @@ The project involves identifying toxic comments based on a dataset with labeled 
 
 ### Testing
 - The logistic regression model showed the best performance with Spacy-lemmatized data.
-
-## Skills and Tools
-
-- **python**
-- **pandas**
-- **numpy**
-- matplotlib.**pyplot**
-- **seaborn**
-- sklearn.preprocessing.**StandardScaler**
-- sklearn.preprocessing.**OrdinalEncoder**
-- sklearn.**pipeline**
-- sklearn.linear_model.**LinearRegression**
-- sklearn.tree.**DecisionTreeRegressor**
-- sklearn.ensemble.**RandomForestRegressor**
-- **lightgbm**
-- **xgboost**
-- catboost.**CatBoostRegressor**
 
 ## Conclusion
 

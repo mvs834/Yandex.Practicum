@@ -1,4 +1,4 @@
-# Analysis of trends in the popularity of games
+# Games Popularity Trends Analysis
 
 [ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DA%2005%20Games%20popularity%20trends%20analysis/Games_popularity_trends_analysis.ipynb)
 
@@ -6,16 +6,24 @@
 
 It is necessary to identify patterns that determine the success of the game based on historical data about the games. This will allow you to bet on a potentially popular product and plan advertising campaigns
 
-## Project progress
-### Data loading
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- matplotlib.**pyplot**
+- **seaborn**
+
+## Project Execution
+### Data Upload and Overview
 
 Data is loaded, needs preprocessing
 
-### Data preprocessing
+### Data Preprocessing
 - column names are reduced to lowercase
-- - partial replacement of omissions was made: the rating omissions were partially restored by the names of the games, and the ratings of users and critics have a significant number of omissions, it is better not to fill them in so as not to draw incorrect conclusions when analyzing.
+- partial replacement of omissions was made: the rating omissions were partially restored by the names of the games, and the ratings of users and critics have a significant number of omissions, it is better not to fill them in so as not to draw incorrect conclusions when analyzing.
 
-### Exploratory data analysis
+### Exploratory Data Analysis
 - studied data slices: games by year, sales by platform, sales from reviews, games by genre
 - a portrait of a user from each region has been compiled: the most popular platforms, genres, the impact of the ESBR rating on sales in the regions
 
@@ -29,17 +37,6 @@ The statistical hypothesis of the equality of average user ratings of the two pl
 - Alternative hypothesis: the average user ratings of Action and Sports genres are different.
 
 The statistical hypothesis of the equality of average user ratings of the two genres is rejected. This is consistent with the results - the study showed that the user profile (genre preferences) differs around the world.
-
-
-## Skills and tools
-
-- **python**
-- **pandas**
-- **numpy**
-- matplotlib.**pyplot**
-- **seaborn**
-
-
 
 ## Conclusion
 

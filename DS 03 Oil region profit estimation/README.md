@@ -6,7 +6,17 @@
 
 The objective of this project is to determine the most profitable and least risky region for drilling a new well based on data about the quality of oil and the volume of reserves.
 
-## Project Execution Steps
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- Bootstrap
+- matplotlib.**pyplot**
+- **seaborn**
+- sklearn.linear_model.**LinearRegression**
+
+## Project Execution
 ### Data Upload and Preparation
 
 Since there are no missing values, duplicates or problematic values in the data, no preprocessing is required.
@@ -22,18 +32,6 @@ Since there are no missing values, duplicates or problematic values in the data,
 
 - A function was written to calculate the profit.
 - A function was written to evaluate the prospects using Bootstrap.
-
-## Skills and Tools
-
-- **python**
-- **pandas**
-- **numpy**
-- Bootstrap
-- matplotlib.**pyplot**
-- **seaborn**
-- sklearn.linear_model.**LinearRegression**
-
-
 
 ## Conclusion
 

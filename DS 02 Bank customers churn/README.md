@@ -1,10 +1,21 @@
-# Bank customer churn prediction
+# Bank Customer Churn Prediction
 
 [ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DS%2002%20Bank%20customers%20churn/Bank_customer_churn.ipynb)
 
 ## Project Description
 
 The task is to predict whether a customer will leave the bank based on historical data on customer behavior and termination of contracts with the bank.
+
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- matplotlib.**pyplot**
+- **seaborn**
+- sklearn.linear_model.**LogisticRegression**
+- sklearn.tree.**DecisionTreeClassifier**
+- sklearn.ensemble.**RandomForestClassifier**
 
 ## Project Execution
 ### Data Upload and Preprocessing
@@ -41,19 +52,6 @@ Conclusion: The highest F1 score was achieved when training the Random Forest mo
 ### Model Test
 - f1_score: 0.59
 - AUC ROC score: 0.8566493552869575
-
-## Skills and Tools
-
-- **python**
-- **pandas**
-- **numpy**
-- matplotlib.**pyplot**
-- **seaborn**
-- sklearn.linear_model.**LogisticRegression**
-- sklearn.tree.**DecisionTreeClassifier**
-- sklearn.ensemble.**RandomForestClassifier**
-
-
 
 ## Conclusion
 

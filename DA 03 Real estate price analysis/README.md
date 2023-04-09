@@ -5,7 +5,7 @@
 ## Project Description
 The objective is to identify the parameters that affect the market value of real estate based on advertisement data and mapping. This will enable the creation of an automated system that can detect anomalies and fraudulent activities.
 
-## Skills and Tools Used
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -13,8 +13,8 @@ The objective is to identify the parameters that affect the market value of real
 - matplotlib.**pyplot**
 - **seaborn**
 
-## Ход выполнения проекта
-### Data Loading and Review
+## Project Execution
+### Data Upload and Overview
 Necessary actions have been identified:
 
 - Renaming columns
@@ -46,7 +46,7 @@ Data type has been changed:
 - Categorization of apartment floors
 - Ratio of total area to living area
 
-### Exploratory Data Analysis:
+### Exploratory Data Analysis
 
 - Filtered out rows likely covering predominantly small settlements.
 - The price is directly dependent on the area of the property.

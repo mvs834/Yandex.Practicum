@@ -6,16 +6,6 @@
 
 The goal of this project is to determine the approximate age of a person based on a photograph using a dataset of labeled images of people with their ages.
 
-## Project Execution
-
-### Data Upload and EDA
-- The data is provided in the form of photographs and labeled ages.
-- The age distribution in the dataset is imbalanced, with the most common age group being between 20-30 years old.
-- Photographs of people over the age of 60 are less common in the dataset, which may result in poorer model performance on such photographs.
-
-### Model Training
-- A three-layered neural network ResNet50 without augmentation was created with a ReLU activation function and an Adam optimizer.
-
 ## Skills and Tools
 
 - **python**
@@ -28,7 +18,15 @@ The goal of this project is to determine the approximate age of a person based o
 - tensorflow.keras.optimizers.**Adam**
 - tensorflow.keras.preprocessing.image.**ImageDataGenerator**
 
+## Project Execution
 
+### Data Upload and Overview
+- The data is provided in the form of photographs and labeled ages.
+- The age distribution in the dataset is imbalanced, with the most common age group being between 20-30 years old.
+- Photographs of people over the age of 60 are less common in the dataset, which may result in poorer model performance on such photographs.
+
+### Model Training
+- A three-layered neural network ResNet50 without augmentation was created with a ReLU activation function and an Adam optimizer.
 
 ## Conclusion
 

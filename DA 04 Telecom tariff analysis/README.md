@@ -1,17 +1,24 @@
-# Analysis of telecom company tariffs
+# Telecom Company Tariffs Analysis
 
 [ipynb](https://github.com/mvs834/Yandex.Practicum/blob/3aa4bea6c1e42ac87a4f471651cbefc30ebf6d9f/DA%2004%20Telecom%20tariff%20analysis/Telecom_tariff_analysis.ipynb)
 
-## Project description
+## Project Description
 
 The aim of the project is to analyze the behavior of telecom company customers and determine which tariff is more profitable for the company.
 
-## Project workflow
-### Data upload
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- scipy.**stats**
+
+## Project Execution
+### Data Upload and Overview
 
 The data has been loaded and does not have any missing values. Since the task requires studying slices by months, dates should be converted to the appropriate format.
 
-### Data preparation
+### Data Preprocessing
 - Column names have been renamed.
 - Data types have been changed.
 - Dates have been rounded to months.
@@ -19,31 +26,22 @@ The data has been loaded and does not have any missing values. Since the task re
 - Seconds have been rounded to minutes.
 - New columns have been calculated: revenue from calls, SMS and Internet, as well as total revenue including subscription fees.
 
-### Data analysis
+### Exploratory Data Analysis
 - The mean value of the "Ultra" tariff plan in the sample is higher than that of the "Smart" plan.
 - The standard deviation of the "Ultra" tariff plan in the sample is higher than that of the "Smart" plan.
 - The distributions are similar, but the sample for the "Ultra" plan has a greater positive skewness, although the value of the first quartile is lower than that of the "Smart" plan.
 
-### Hypothesis testing
+### Hypothesis Testing
 
-- Revenue by tariff plans:
-Null hypothesis: The average revenue of users on the "Ultra" and "Smart" tariff plans is the same.
-Alternative hypothesis: The average revenue of users on the "Ultra" and "Smart" tariff plans is different.
+Revenue by tariff plans:
+- Null hypothesis: The average revenue of users on the "Ultra" and "Smart" tariff plans is the same.
+- Alternative hypothesis: The average revenue of users on the "Ultra" and "Smart" tariff plans is different.
 
-- Revenue by cities:
-Null hypothesis: The average revenue of users from Moscow is not different from the revenue of users from other regions.
-Alternative hypothesis: The average revenue of users from Moscow is different from the revenue of users from other regions.
+Revenue by cities:
+- Null hypothesis: The average revenue of users from Moscow is not different from the revenue of users from other regions.
+- Alternative hypothesis: The average revenue of users from Moscow is different from the revenue of users from other regions.
 
-## Skills and tools
-
-- **python**
-- **pandas**
-- **numpy**
-- scipy.**stats**
-
-
-
-## Summary
+## Conclusion
 
 The input data for "duration" and "mb_used" have a left-skewed distribution that approximates a Poisson distribution. This is an expected distribution for data reflecting the duration of events.
 

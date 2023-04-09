@@ -6,8 +6,25 @@
 
 The goal of this project is to estimate the market value of a car based on historical data, including technical specifications, equipment, and prices of similar cars.
 
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- matplotlib.**pyplot**
+- **seaborn**
+- sklearn.preprocessing.**StandardScaler**
+- sklearn.preprocessing.**OrdinalEncoder**
+- sklearn.**pipeline**
+- sklearn.linear_model.**LinearRegression**
+- sklearn.tree.**DecisionTreeRegressor**
+- sklearn.ensemble.**RandomForestRegressor**
+- **lightgbm**
+- **xgboost**
+- catboost.**CatBoostRegressor**
+
 ## Project Execution
-### Data Upload and Preparation
+### Data Upload and Overview
 - Column names are not in the "snake_case" format.
 - Columns with dates are not in date format.
 - Missing data on timestamps.
@@ -33,23 +50,6 @@ The goal of this project is to estimate the market value of a car based on histo
 
 ### Model Analysis
 - The CatBoost model with the lowest RMSE values and optimal training time was selected.
-
-## Skills and Tools
-
-- **python**
-- **pandas**
-- **numpy**
-- matplotlib.**pyplot**
-- **seaborn**
-- sklearn.preprocessing.**StandardScaler**
-- sklearn.preprocessing.**OrdinalEncoder**
-- sklearn.**pipeline**
-- sklearn.linear_model.**LinearRegression**
-- sklearn.tree.**DecisionTreeRegressor**
-- sklearn.ensemble.**RandomForestRegressor**
-- **lightgbm**
-- **xgboost**
-- catboost.**CatBoostRegressor**
 
 ## Conclusion
 

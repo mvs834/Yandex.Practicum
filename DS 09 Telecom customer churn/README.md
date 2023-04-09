@@ -6,6 +6,22 @@
 
 The goal of this project is to analyze customer data, including their connected services and expenses, and predict potential customer churn.
 
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- matplotlib.**pyplot**
+- **seaborn**
+- sklearn.feature_selection.**SequentialFeatureSelector**
+- sklearn.inspection.**permutation_importance**
+- sklearn.linear_model.**LogisticRegression**
+- sklearn.tree.**DecisionTreeClassifier**
+- sklearn.ensemble.**RandomForestClassifier**
+- **lightgbm**
+- **xgboost**
+- catboost.**CatBoostClassifier**
+
 ## Project Execution
 ### Data Upload and Preprocessing
 - Column names are converted to lowercase.
@@ -32,25 +48,6 @@ The goal of this project is to analyze customer data, including their connected 
 
 ### Model Evaluation on Test Set
 - The LGBM model achieved an ROC-AUC score of 0.89 on the test set.
-
-
-## Skills and Tools
-
-- **python**
-- **pandas**
-- **numpy**
-- matplotlib.**pyplot**
-- **seaborn**
-- sklearn.feature_selection.**SequentialFeatureSelector**
-- sklearn.inspection.**permutation_importance**
-- sklearn.linear_model.**LogisticRegression**
-- sklearn.tree.**DecisionTreeClassifier**
-- sklearn.ensemble.**RandomForestClassifier**
-- **lightgbm**
-- **xgboost**
-- catboost.**CatBoostClassifier**
-
-
 
 ## Conclusion
 

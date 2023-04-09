@@ -6,8 +6,20 @@
 
 The goal of this project is to predict the gold recovery rate from gold-containing ore based on mining and refining parameters.
 
+## Skills and Tools
+
+- **python**
+- **pandas**
+- **numpy**
+- matplotlib.**pyplot**
+- **seaborn**
+- sklearn.linear_model.**LinearRegression**
+- sklearn.tree.**DecisionTreeRegressor**
+- sklearn.ensemble.**RandomForestRegressor**
+
+
 ## Project Execution
-### Data Upload and Preparation
+### Data Upload and Overview
 - The test dataset is missing 34 features that are present in the training dataset.
 - The efficiency of enrichment calculations was verified, and the calculation was found to be correct.
 - The test dataset is missing the target features, final.output.recovery and rougher.output.recovery.
@@ -24,19 +36,6 @@ The goal of this project is to predict the gold recovery rate from gold-containi
 ### Model Building
 - Functions were written to calculate the final sMAPE.
 - Linear regression, decision tree, and random forest models were trained.
-
-## Skills and Tools
-
-- **python**
-- **pandas**
-- **numpy**
-- matplotlib.**pyplot**
-- **seaborn**
-- sklearn.linear_model.**LinearRegression**
-- sklearn.tree.**DecisionTreeRegressor**
-- sklearn.ensemble.**RandomForestRegressor**
-
-
 
 ## Conclusion
 
