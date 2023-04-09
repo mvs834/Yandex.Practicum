@@ -1,33 +1,33 @@
-# Выявление токсичных комментариев
+# Toxic Comments Identification
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/346d5c78d45f2053aea598555d54ae9550e64705/Car%20Price%20Prediction/Car_Price_Prediction.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/c9dc42efdaf7410a9cab595dce69a0648a6ba2d1/DS%2007%20Toxic%20comments/Toxic_Comments_Predictions.ipynb)
 
-## Описание проекта
+## Project Description:
 
-Необходимо искать токсичные комментарии на основе набора данных с разметкой токсичности.
+The project involves identifying toxic comments based on a dataset with labeled toxicity.
 
-## Ход выполнения проекта
-### Подготовка данных
-- данные представлены в виде текстовых комментариев
-- пропусков и дубликатов нет
-- целевой признак несбалансирован
+## Project Execution
+### Data Preparation
+- The data is provided in the form of textual comments.
+- There are no missing or duplicate values.
+- The target variable is imbalanced.
 
-### Очистка и лемматизация текста
-- очистка текста от знаков препинания, цифр, символов и пр. кроме букв и приведение к строчным буквам
-- лемматизация текста двумя способами NLTK (более быстрый) и Spacy (более долгий)
+### Text Cleaning and Lemmatization
+- Cleaning the text by removing punctuation marks, digits, symbols, and others except letters and converting to lowercase.
+- Lemmatization of the text using two methods: NLTK (faster) and Spacy (slower).
 
-### Обучение моделей
-- векторизация текста методом TF-IDF
-- обучение моделей логистической регрессии, дерева решений, случайного леса, градиентного бустинга и катбуста
-- наилучший результат показала модель логистической регрессии
+### Model Training
+- Text vectorization using the TF-IDF method.
+- Training models using logistic regression, decision tree, random forest, gradient boosting, and CatBoost.
+- The logistic regression model showed the best performance.
 
-### Оценка лемматизации
-- лемматизация текста с помощью Spacy показала лучший результат
+### Lemmatization Evaluation
+- Lemmatization using Spacy showed better results.
 
-### Тестирование
-- модель логистической регрессии показала наилучший результат с данными, леммаизированными с помощью Spacy
+### Testing
+- The logistic regression model showed the best performance with Spacy-lemmatized data.
 
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -48,8 +48,6 @@
 
 
 
-## Вывод
+## Conclusion
 
-Текст загружен, в предобработке не нуждался. Подготовка данных заключалась в очистке от знаков препнания, цифр, символов и пр. кроме букв и приведении к строчным буквам. Лемматизация проводилась двумя способами NLTK (более быстрый) и Spacy (более долгий). Для обучения текстовые данные векторизовались методом TF-IDF. Обучение происходило посредством логистической регрессии и деревянных моделей. Логистическая регрессия показала наилучший результат. Лемматизация оказалась лучше методом Spacy.
-
-В качестве дальнейших шагов по улучшению метрики можно выполнить токенизацию, обучение с градиентным бустингом и векторизацию нейронной сеткой BERT.
+The text was loaded and did not require preprocessing. Data preparation involved cleaning the text by removing punctuation marks, digits, symbols, and others except letters and converting to lowercase. Lemmatization was performed using two methods: NLTK (faster) and Spacy (slower). Text data was vectorized using the TF-IDF method for training logistic regression and decision tree models. The logistic regression model showed the best performance, and Spacy-lemmatized data achieved better results. To improve the metric further, tokenization, gradient boosting, and neural network-based vectorization with BERT can be implemented as next steps.
