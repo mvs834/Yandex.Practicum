@@ -1,40 +1,40 @@
-# Прогноз оттока клиентов телекоммуникационной компании
+# Customer Churn Prediction for a Telecommunications Company
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/8e47d9a14f590bd0f375b9f6a1d9b4edb528c687/Telecom%20customer%20churn/Telecom_Customer_Churn_LGBM_0,89.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/bf33fa99fe0a03205e62018f9cb3c3249aa96141/DS%2009%20Telecom%20customer%20churn/Telecom_Customer_Churn_LGBM_0,89.ipynb)
 
-## Описание проекта
+## Project Description
 
-Требуется анализировать персональные данные клиентов, их подключённые услуги и расходы, и прогнозировать возможный отток клиентов
+The goal of this project is to analyze customer data, including their connected services and expenses, and predict potential customer churn.
 
-## Ход выполнения проекта
-### Загрузка и предобработка данных
-- названия колонок приведены к нижнему регистру
-- пропуски в данных отсутствуют
-- типы данных приведены к соответствующим
-- исследованы распределения признаков
-- созданы новые признаки
+## Project Execution
+### Data Upload and Preprocessing
+- Column names are converted to lowercase.
+- No missing values were found.
+- Data types were converted to their appropriate types.
+- Feature distributions were analyzed.
+- New features were created.
 
-### Выбор признаков
-- исследованы корреляции признаков
+### Feature Selection
+- Feature correlations were analyzed.
 
-### Исследовательский анализ данных
-- ушедшие клиенты имели большие расходы на ежемесячную оплату услуг и не имели дополнительных услуг
+### Exploratory Data Analysis
+- Churned customers had higher monthly service expenses and did not have additional services.
 
-### Подготовка данных к обучению
-- данные разбиты на выборки
-- категориальные признаки закодированы
-- количественные признаки масштабированы
-- выбраны значимые признаки на основе модели логистической регрессии и модели случайного леса
+### Data Preparation for Training
+- Data was split into training and testing sets.
+- Categorical features were encoded.
+- Quantitative features were scaled.
+- Significant features were selected based on logistic regression and random forest models.
 
-### Обучение моделей
-- обучены модели логистической регрессии, дерева решений, случайного леса, градиентного бустинга с учётом несбалансированности классов LGBM, XGBoost, CatBoost
-- выбрана модель LGBM с наилучшим качеством
+### Model Training
+- Logistic regression, decision tree, random forest, and gradient boosting models were trained with consideration for class imbalance using LGBM, XGBoost, and CatBoost classifiers.
+- The LGBM model with the best performance was selected.
 
-### Проверка модели на тестовой выборке
-- на тестовой выборке получена ROC-AUC 0,89
+### Model Evaluation on Test Set
+- The LGBM model achieved an ROC-AUC score of 0.89 on the test set.
 
 
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -52,6 +52,6 @@
 
 
 
-## Вывод
+## Conclusion
 
-Была проведена предобработка данных, исследовательская работа по выявлению значимости признаков, создание новых признаков и обучению и выбору модели для прогноза оттока клиентов. Выбрана модель lightgbm, показавшая результат ROC-AUC 0,89.
+This project involved data preprocessing, exploratory analysis to identify significant features, creation of new features, and training and selection of a model for customer churn prediction. The LGBM model was selected with an ROC-AUC score of 0.89.
