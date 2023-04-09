@@ -1,29 +1,28 @@
-# Временные ряды. Прогноз количества клиентов
+# Time Series. Forecasting the number of taxi clients.
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/2cf5878f435784bf943c845d927df48d96293d13/Time%20Series%20Taxi%20Client%20Prediction/Time_Series_Taxi_Clients_Prediction_RMSE_6.9.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/0ba08c55408e5f1b47e1ec04d56d6d981c85a8a8/DS%2006%20Taxi%20clients%20prediction/Time_Series_Taxi_Clients_Prediction_RMSE_6.9.ipynb)
 
-## Описание проекта
+## Project description
+The goal of this project is to analyze historical data on taxi orders at airports and forecast the number of taxi orders for the next hour based on this data.
 
-Необходимо проанализировать исторические данные о заказах такси в аэропортах и на этой основе спрогнозировать количество заказов такси на следующий час
+## Project Execution
+### Data preparation
+- The data is represented as a time series with hourly intervals
+- The data contains outliers
+- The data is monotonous
 
-## Ход выполнения проекта
-### Подготовка данных
-- данные представлены в виде временного ряда с часовым интервалом
-- данные содержат выбросы
-- данные моностонны
+### Data analysis
+- The data exhibits a trend and daily seasonality
 
-### Анализ данных
-- в данных присутствует тренд и суточная сезонность
+### Model training
+- A feature for the day of the week was created to train the models
+- Models were trained using linear regression, decision tree, random forest, gradient boosting, and CatBoost
+- The best result was achieved with the random forest model
 
-### Обучение моделей
-- созданы признак дня недели для обучения моделей
-- обучены модели линейной регрессии, дерева решений, случайного леса, градиентного бустинга и катбуста
-- наилучший результат показала модель случайного леса
+### Model testing
+- On the test dataset, the random forest model achieved an RMSE score of 6.9
 
-### Тестирование модели
-- на тестовой выборке модель случайного леса показала результат RMSE = 6.9
-
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -41,6 +40,6 @@
 - catboost.**CatBoostRegressor**
 
 
-## Вывод
+## Conclusion
 
-Была проведена предобработка данных (очистка от выбросов, проверка наличия пропусков и дубликатов, проверка моностонности, перемасштабирование), исследовательская работа по анализу сезонности, и обучение и выбор модели для прогноза количества клиентов такси в следующем часу. Наименьшую ошибку имеет модель дерева решений с параметром max_depth = 4. При таком гиперпараметре на тестовой выборке метрика RMSE составляет 6.9
+In this project, the data was preprocessed (outliers removal, checking for missing values and duplicates, checking for monotonicity, rescaling), an exploratory data analysis was performed to identify seasonality, and a model was trained and selected to forecast the number of taxi clients for the next hour. The best model was the decision tree model with max_depth=4. At this hyperparameter value, the RMSE score on the test dataset is 6.9.
