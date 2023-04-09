@@ -1,22 +1,22 @@
-# Определение возраста покупателей по фотографии
+# Age detection of customers from a photograph
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum-RUS/blob/86a6ef8034e0ec42de64205aca8463704ff65763/Face%20age%20recognition/Face_age_recognition.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/9f3093c12cfc91dc4abc9c7203ccd327a812d7cf/DS%2008%20Face%20age%20recognition/Face_age_recognition.ipynb)
 
-## Описание проекта
+## Project Description
 
-Необходимо по фотографии определить приблизительный возраст человека на основе набора фотографий людей с указанием возраста
+The goal of this project is to determine the approximate age of a person based on a photograph using a dataset of labeled images of people with their ages.
 
-## Ход выполнения проекта
+## Project Execution
 
-### Исследовательский анализ данных
-- данные представлены в виде фотографий и разметки возраста
-- распределение возраста в выборке несбалансировано, наиболее часто встречаются фотографии людей от 20 до 30 лет
-- на людях с возрастом более 60 лет фотографии встречаются реже, а значит, модель будет хуже обучена на таких фотографиях
+### Data Upload and EDA
+- The data is provided in the form of photographs and labeled ages.
+- The age distribution in the dataset is imbalanced, with the most common age group being between 20-30 years old.
+- Photographs of people over the age of 60 are less common in the dataset, which may result in poorer model performance on such photographs.
 
-### Обучение модели
-- создана трёхслойная нейронная сеть ResNet50 без аугментации с функцией активации relu и оптимизатором Adam
+### Model Training
+- A three-layered neural network ResNet50 without augmentation was created with a ReLU activation function and an Adam optimizer.
 
-## Навыки и инструменты
+## Skills and Tools
 
 - **python**
 - **pandas**
@@ -30,6 +30,6 @@
 
 
 
-## Вывод
+## Conclusion
 
-Модель обучена на выборке из 7591 размеченных фотографий. Выборка несбалансирована и наиболее освещённая возрастная группа от 20 до 30 лет, а также дети дошкольного возраста. Валидационная выборка составила 25%. Использована трёхслойная нейронная сеть ResNet50 без аугментации. Результат по метрике mae составил менее 8, что достаточно для выполнения задачи распознавания возраста по фотографии для данного магазина. Задача бизнеса по определению возраста покупателя должна быть решена, поскольку наиболее освещённая разметкой группа относится к наиболее активной с точки зрения покупательской активности.
+The model was trained on a dataset of 7591 labeled photographs. The dataset is imbalanced, with the most well-represented age group being between 20-30 years old, as well as preschool children. The validation set was 25%. A three-layered neural network ResNet50 without augmentation was used. The result for the mean absolute error metric was less than 8, which is sufficient for the age detection task for this store. The business task of determining the age of customers should be solved, as the most well-represented labeled age group corresponds to the most active age group in terms of purchasing activity.
