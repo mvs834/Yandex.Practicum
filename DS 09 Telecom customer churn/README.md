@@ -1,6 +1,6 @@
 # Customer Churn Prediction for a Telecommunications Company
 
-[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/bf33fa99fe0a03205e62018f9cb3c3249aa96141/DS%2009%20Telecom%20customer%20churn/Telecom_Customer_Churn_LGBM_0,89.ipynb)
+[ipynb](https://github.com/mvs834/Yandex.Practicum/blob/bff7a30c0b9fb9cd09551ec9d79578344f975552/DS%2009%20Telecom%20customer%20churn/Telecom_Customer_Churn_LGBM_0,89.ipynb)
 
 ## Project Description
 
